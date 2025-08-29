@@ -1,0 +1,175 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "category": "Electronics",
+      "price": 999.99,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
+      "description": "Latest iPhone with advanced camera system",
+      "status": "active",
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "MacBook Air M2",
+      "category": "Electronics",
+      "price": 1199.99,
+      "stock": 23,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+      "description": "Ultra-thin laptop with M2 chip",
+      "status": "active",
+      "createdAt": "2024-01-10T14:20:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Nike Air Max",
+      "category": "Fashion",
+      "price": 129.99,
+      "stock": 67,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "description": "Comfortable running shoes",
+      "status": "active",
+      "createdAt": "2024-01-08T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Samsung 4K TV",
+      "category": "Electronics",
+      "price": 799.99,
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400",
+      "description": "55-inch 4K Smart TV",
+      "status": "active",
+      "createdAt": "2024-01-12T16:45:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Coffee Maker",
+      "category": "Home & Kitchen",
+      "price": 89.99,
+      "stock": 34,
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400",
+      "description": "Programmable coffee maker",
+      "status": "active",
+      "createdAt": "2024-01-05T11:30:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "products": [
+        { "productId": 1, "quantity": 1, "price": 999.99 },
+        { "productId": 3, "quantity": 2, "price": 129.99 }
+      ],
+      "total": 1259.97,
+      "status": "completed",
+      "orderDate": "2024-01-20T10:30:00Z",
+      "shippingAddress": "123 Main St, New York, NY 10001"
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "products": [
+        { "productId": 2, "quantity": 1, "price": 1199.99 }
+      ],
+      "total": 1199.99,
+      "status": "processing",
+      "orderDate": "2024-01-21T14:20:00Z",
+      "shippingAddress": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "id": 3,
+      "customerId": 3,
+      "products": [
+        { "productId": 4, "quantity": 1, "price": 799.99 },
+        { "productId": 5, "quantity": 1, "price": 89.99 }
+      ],
+      "total": 889.98,
+      "status": "shipped",
+      "orderDate": "2024-01-19T09:15:00Z",
+      "shippingAddress": "789 Pine St, Chicago, IL 60601"
+    },
+    {
+      "id": 4,
+      "customerId": 1,
+      "products": [
+        { "productId": 3, "quantity": 1, "price": 129.99 }
+      ],
+      "total": 129.99,
+      "status": "pending",
+      "orderDate": "2024-01-22T16:45:00Z",
+      "shippingAddress": "123 Main St, New York, NY 10001"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@email.com",
+      "phone": "+1-555-0123",
+      "address": "123 Main St, New York, NY 10001",
+      "totalOrders": 2,
+      "totalSpent": 1389.96,
+      "joinDate": "2023-12-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@email.com",
+      "phone": "+1-555-0456",
+      "address": "456 Oak Ave, Los Angeles, CA 90210",
+      "totalOrders": 1,
+      "totalSpent": 1199.99,
+      "joinDate": "2024-01-05T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "email": "mike.johnson@email.com",
+      "phone": "+1-555-0789",
+      "address": "789 Pine St, Chicago, IL 60601",
+      "totalOrders": 1,
+      "totalSpent": 889.98,
+      "joinDate": "2024-01-10T00:00:00Z"
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "date": "2024-01-20",
+      "amount": 1259.97,
+      "orders": 1
+    },
+    {
+      "id": 2,
+      "date": "2024-01-21",
+      "amount": 1199.99,
+      "orders": 1
+    },
+    {
+      "id": 3,
+      "date": "2024-01-19",
+      "amount": 889.98,
+      "orders": 1
+    },
+    {
+      "id": 4,
+      "date": "2024-01-22",
+      "amount": 129.99,
+      "orders": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Administrator"
+    }
+  ]
+}
